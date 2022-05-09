@@ -1,0 +1,57 @@
+.page-title {
+    text-align: center;
+}
+
+.todo-container{
+    margin: 4px;
+    border-width: 1px;
+    padding: 4px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dates{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    grid-area: dates;
+}
+
+.first-container{
+    display: grid;
+    grid-template-columns: 3fr 2fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "title title title"
+        "tags . dates"
+        "button button button";
+
+    border: 1px solid #000;
+    margin: 8px;
+    border-radius: 16px;
+}
+
+.tags {
+    padding: 5px;
+    margin-left: 10;
+    border-radius: 8px;
+    grid-area: tags;
+}
+
+
+.title{
+    font-weight: bold;
+    margin: 5px;
+    grid-area: title;
+    text-align: center;
+}
+
+
+.todo-button{
+    grid-area: button;
+    width: 100%;
+    border: none;
+    background-color: rgb(200, 200, 200);
+    border-radius: 0px 0px 16px 16px;
+}
